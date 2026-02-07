@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0b0c;
+  --surface: #121214;
+  --text: #f4f1ea;
+  --muted: rgba(244, 241, 234, 0.72);
+  --gold: #c9a76a;
+  --gold-strong: #d8b878;
+  --border: rgba(201, 167, 106, 0.22);
+
+  --radius-brand: 10px;
+  --shadow-brand: 0 12px 30px rgba(201, 167, 106, 0.14);
+  --shadow-glow: 0 0 0 2px rgba(201, 167, 106, 0.45);
+}
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  html,
+  body {
+    color: var(--text);
+    background: var(--bg);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  p,
+  a,
+  li,
+  button {
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  }
+  body {
+    min-height: 100vh;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--bg);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold uppercase tracking-[0.08em] transition-transform duration-200;
+    background: var(--gold);
+    color: var(--bg);
+    border-radius: var(--radius-brand);
+    box-shadow: var(--shadow-brand);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px rgba(201, 167, 106, 0.28);
+  }
+  .btn-primary:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-glow);
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold uppercase tracking-[0.08em] transition-transform duration-200 border;
+    color: var(--gold);
+    border-color: var(--gold);
+    border-radius: var(--radius-brand);
+  }
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+    background: rgba(201, 167, 106, 0.08);
+  }
+  .btn-secondary:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .section {
+    @apply w-full;
+    padding: 5rem 0;
+  }
+  .container-xl {
+    @apply mx-auto px-6 md:px-10 max-w-6xl;
+  }
+  .split {
+    @apply grid gap-10 lg:grid-cols-2 items-center;
+  }
+}
