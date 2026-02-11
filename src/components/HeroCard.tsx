@@ -3,9 +3,9 @@ import { Section } from "@/components/Section";
 
 export const HeroCard = () => {
   return (
-    <Section id="hjem" fullWidth className="bg-[#0b0b0c] py-10 lg:py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[8px] bg-[#f3ecdd] border border-[#b9935a] shadow-[0_14px_50px_rgba(0,0,0,0.25)] overflow-hidden">
+    <Section id="hjem" fullWidth className="bg-[#0b0b0c] pt-0 pb-10 lg:pb-12">
+      <div className="w-full bg-[#f3ecdd] border border-[#b9935a] shadow-[0_14px_50px_rgba(0,0,0,0.25)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center px-7 md:px-9 lg:px-11 py-5 lg:py-7">
             <div className="lg:col-span-5 space-y-5">
               <div className="space-y-2">
@@ -20,7 +20,7 @@ export const HeroCard = () => {
                 BARBERSHOP I BODØ
               </p>
               <p className="text-lg md:text-xl text-[#201c15] max-w-xl leading-relaxed">
-                Premium fades og moderne herrestiler – en fresh, inkluderende barbershop i sentrum. Spesielt god på texture / afro-hår.
+                Premium fades og moderne herrefrisyrer – en inkluderende og fresh barbershop midt i sentrum. Spesialister på texture-hår.
               </p>
               <div className="relative inline-block mt-2">
                 <span className="absolute inset-0 translate-x-[6px] translate-y-[6px] border-2 border-[#0b0b0c]" aria-hidden />

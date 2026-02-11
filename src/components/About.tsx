@@ -8,34 +8,29 @@ export const About = () => (
       <div className="grid lg:grid-cols-2 gap-8 rounded-[8px] bg-[#f3ecdd] border border-[#b9935a] shadow-[0_14px_50px_rgba(0,0,0,0.2)] overflow-hidden min-h-[58vh]">
         <div className="px-8 md:px-10 lg:px-12 py-8 lg:py-10 flex flex-col gap-4 justify-center">
           <div className="inline-flex items-center gap-3 uppercase tracking-[0.16em] text-sm font-semibold text-[#0b0b0c]">
-            <ScissorIcon className="h-5 w-5" />
-            Om oss
-          </div>
-          <h3 className="text-4xl md:text-5xl lg:text-[48px] leading-[1.02] uppercase text-[#0b0b0c] max-w-2xl">
-            "Young barbers"
-          </h3>
-          <div className="space-y-4 text-base md:text-lg leading-relaxed text-[#1a1610] max-w-3xl">
-            <p>
-              Blendzz ble startet av en ung og ambisiøs gründergruppe i Bodø med en tydelig visjon: å skape mer enn bare en barbershop. Hos oss handler det om presisjon i håndverket, respekt for barberkulturen og en opplevelse som får deg til å føle deg vel – hver eneste gang.
-            </p>
-            <p>
-              Vi spesialiserer oss på skarpe fades, moderne herrefrisyrer og behandling av afro-teksturert hår, og legger stor stolthet i detaljene som skiller en god klipp fra en virkelig gjennomført stil. Barbererne våre følger med på trender, men glemmer aldri de klassiske teknikkene som danner grunnlaget for ekte kvalitet.
-            </p>
-            <p>
-              Blendzz er et sted hvor alle er velkomne – enten du ønsker en tidløs taper, en fresh skin fade eller vil prøve noe helt nytt. Vi tar oss tid til å forstå hva du ønsker, gir ærlige anbefalinger og sørger for at du går ut døren med både selvtillit og en stil som varer.
-            </p>
-            <p>
-              For oss er ikke dette bare en jobb – det er et fag, en lidenskap og en kultur vi er stolte av å bygge videre på i Bodø.
-            </p>
-          </div>
-          <Button
-            as="a"
-            href="#kontakt"
-            variant="secondary"
-            className="border-[#0b0b0c] text-[#0b0b0c] hover:bg-[#0b0b0c] hover:text-[#c9a76a]"
-          >
-            Book time
-          </Button>
+          <ScissorIcon className="h-5 w-5" />
+          Om oss
+        </div>
+        <h3 className="text-4xl md:text-5xl lg:text-[48px] leading-[1.02] uppercase text-[#0b0b0c] max-w-2xl">
+          "Young barbers"
+        </h3>
+        <div className="space-y-4 text-base md:text-lg leading-relaxed text-[#1a1610] max-w-3xl">
+          <p>
+            Blendzz ble startet av en ung gründergruppe i Bodø med et enkelt mål: å skape et sted hvor kvalitet, atmosfære og godt håndverk går hånd i hånd. Her skal det være lav terskel, god stemning og rom for å senke skuldrene litt.
+          </p>
+          <p>
+            Vi jobber hovedsakelig med fades, moderne herrefrisyrer og texture-hår, og legger stor vekt på detaljene som gir et gjennomført resultat. Barbererne våre holder seg oppdatert på trender, men bygger samtidig på klassiske teknikker som aldri går av moten.
+          </p>
+          <p>
+            Mange stikker innom for mer enn bare en klipp. Noen blir sittende litt ekstra, andre tar turen sammen med venner — og det er helt naturlig hos oss. Blendzz skal være et sted det er hyggelig å være, enten du er i stolen eller bare henger litt.
+          </p>
+          <p>
+            Enten du går for en ren taper, en fresh skin fade eller ønsker å prøve noe nytt, tar vi oss tid til å forstå hva du er ute etter og gir ærlige anbefalinger underveis. Målet er enkelt: at du skal gå ut døra med en stil du trives med.
+          </p>
+          <p>
+            For oss er dette mer enn bare en jobb. Det er et fag vi bryr oss om, og et miljø vi er stolte av å bygge videre på i Bodø.
+          </p>
+        </div>
         </div>
         <div className="relative bg-white overflow-hidden">
           <div

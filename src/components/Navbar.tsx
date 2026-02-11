@@ -37,7 +37,12 @@ export const Navbar: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <Button as="a" href="#kontakt" variant="primary" className="px-4 py-2 text-sm">
+          <Button
+            as="a"
+            href="#kontakt"
+            variant="primary"
+            className="px-5 py-2.5 text-base bg-[#f3ecdd] text-[#0b0b0c] border-[#f3ecdd] hover:bg-[#e7dbbf] hover:text-[#0b0b0c]"
+          >
             Book time
           </Button>
         </nav>

@@ -30,9 +30,17 @@ export const Services = () => (
               <ServiceRow key={service.id} service={service} />
             ))}
           </div>
-          <Button as="a" href="#kontakt" variant="primary">
-            Book time
-          </Button>
+          <div className="flex justify-end">
+            <div className="relative inline-block">
+              <span className="absolute inset-0 translate-x-[6px] translate-y-[6px] border-2 border-[#0b0b0c]" aria-hidden />
+              <a
+                href="#kontakt"
+                className="relative inline-flex items-center justify-center px-8 py-3 font-semibold uppercase tracking-[0.08em] bg-[#0b0b0c] text-[#c9a76a] border-2 border-[#0b0b0c] transition-transform duration-200 hover:-translate-y-[2px] hover:brightness-110"
+              >
+                Book time
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
